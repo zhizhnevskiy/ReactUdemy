@@ -7,6 +7,7 @@ import Blog from "./components/blog";
 import Profile from "./components/profile";
 import Contact from "./components/contact";
 import WritePost from "./components/writePost";
+import AppHook from "./AppHook";
 
 export default class header extends Component {
     render() {
@@ -25,6 +26,7 @@ export default class header extends Component {
                                     <Nav.Link><NavLink to="/blog" activeStyle={{color:'orange'}}>Blog</NavLink></Nav.Link>
                                     <Nav.Link><NavLink to="/profile" activeStyle={{color:'orange'}}>Profile</NavLink></Nav.Link>
                                     <Nav.Link><NavLink to="/contact" activeStyle={{color:'orange'}}>Contact Us</NavLink></Nav.Link>
+                                    <Nav.Link><NavLink to="/hook" activeStyle={{color:'orange'}}>Hook</NavLink></Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
@@ -37,6 +39,7 @@ export default class header extends Component {
                         <Route path="/profile" element={<Profile/>}/>
                         <Route path="/contact" element={<Contact/>}/>
                         <Route path="/writePost" element={<WritePost/>}/>
+                        <Route path="/hook" element={<AppHook/>}/>
                     </Routes>
                 </div>
             </Router>
